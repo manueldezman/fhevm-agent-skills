@@ -58,31 +58,21 @@ If your coding agent does not support `SKILL.md` directly, add the body of the r
 ## Example prompts
 
 ```text
-Use the FHEVM smart contract skill to write a private voting contract.
+create a fhevm confidential vault dAPP
 ```
 
 ```text
-Use the FHEVM testing skill to add Hardhat tests for encrypted inputs and user decryption.
+write a fhevm private voting contract.
 ```
 
 ```text
-Use the FHEVM deployment skill to deploy ConfidentialDarkPool to Sepolia and save addresses for the frontend.
+write a Hardhat tests for fhevm encrypted inputs and user decryption.
 ```
 
 ```text
-Use the FHEVM frontend skill to build a browser UI that encrypts order inputs with the Zama Relayer SDK.
+deploy fhevm ConfidentialDarkPool to Sepolia and save addresses for the frontend.
 ```
 
-## Validation checklist
-
-Before relying on the skills, run a real workflow:
-
-```bash
-npm run compile
-npm run test
-npx hardhat accounts --network sepolia
-npx hardhat deploy --network sepolia
-npx hardhat fhevm check-fhevm-compatibility --network sepolia --address <contract-address>
+```text
+ build a front end for the fhevm dAPP that encrypts order inputs with the Zama Relayer SDK.
 ```
-
-For frontend validation, serve the frontend locally and confirm it loads the deployed addresses and initializes the Zama Relayer SDK on Sepolia.
